@@ -1,0 +1,90 @@
+/* 全体の色と雰囲気 */
+:root {
+  --bg: #faf5ef;
+  --text: #4a3f35;
+  --accent: #d8a979;
+  --card-bg: #fff8f1;
+  --radius: 14px;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+}
+
+/* ヒーロー */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #fff3e6, #faf5ef);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #6d5c4b;
+}
+
+/* セクション */
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #5a4a3a;
+}
+
+/* カード */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid #f0e4d6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #5a4a3a;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* フッター */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #f2e8dd;
+  color: #6d5c4b;
+  font-size: 0.9rem;
+}
